@@ -35,10 +35,10 @@ async function loadImages(form, newQuery = false) {
   refs.gallery.insertAdjacentHTML("beforeend", markupGaleri(data.hits)) 
 
   if (document.querySelectorAll('.photo-card').length >= data.totalHits) {
-    // refs.loadButton.style.display = 'none';
+    refs.loadButton.style.display = 'none';
     showMassage("We're sorry, but you've reached the end of search results.")
   } else {
-    // refs.loadButton.style.display = 'none';
+    refs.loadButton.style.display = 'block';
   }
 
 }
